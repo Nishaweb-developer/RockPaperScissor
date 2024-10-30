@@ -21,29 +21,29 @@
 
 
         if (RandomNumber >= 0 && RandomNumber < 1 / 3) {
-            return 'Rock';
+            return 'rock';
         }
         else if (RandomNumber >= 1 / 3 && RandomNumber < 2 / 3) {
-            return 'Paper'
+            return 'paper'
         }
         else if (RandomNumber >= 2 / 3 && RandomNumber < 1) {
-            return 'Scissors'
+            return 'scissors'
         }
     }
 
     function Play(UserClick) {
         var ComputerMove = calcRandomNumber();
         var result;
-        if (UserClick === 'Scissors') {
+        if (UserClick === 'scissors') {
 
 
-            if (ComputerMove === 'Rock') {
+            if (ComputerMove === 'rock') {
                 result = 'You lose!'
             }
-            else if (ComputerMove === 'Paper') {
+            else if (ComputerMove === 'paper') {
                 result = 'You Win!'
             }
-            else if (ComputerMove === 'Scissors') {
+            else if (ComputerMove === 'scissors') {
                 result = 'Tie!'
             }
 
@@ -51,32 +51,32 @@
 
         }
 
-        else if (UserClick === 'Rock') {
+        else if (UserClick === 'rock') {
 
 
-            if (ComputerMove === 'Paper') {
+            if (ComputerMove === 'paper') {
                 result = 'You lose!'
             }
-            else if (ComputerMove === 'Rock') {
+            else if (ComputerMove === 'rock') {
                 result = 'Tie!'
             }
-            else if (ComputerMove === 'Scissors') {
+            else if (ComputerMove === 'scissors') {
                 result = 'You Win!'
             }
 
 
         }
 
-        else if (UserClick === 'Paper') {
+        else if (UserClick === 'paper') {
 
 
-            if (ComputerMove === 'Paper') {
+            if (ComputerMove === 'paper') {
                 result = 'You lose!'
             }
-            else if (ComputerMove === 'Rock') {
+            else if (ComputerMove === 'rock') {
                 result = 'Tie!'
             }
-            else if (ComputerMove === 'Scissors') {
+            else if (ComputerMove === 'scissors') {
                 result = 'You Win!'
             }
 
